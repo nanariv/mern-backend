@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CRUD To-do list</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- import the webpage's stylesheet -->
+   
+  </head>
+  <body class="container">
+    <h1 align="center">TODO APP</h1>
+
+            <!-- form to create task -->
+        <form action="/create-task" method="POST">
+
+            <table class="table">
+                <thead>
+                  <tr class="table-active">
+                    <th >Add Task</th>
+                    <th >category</th>
+                    <th >date</th>
+                    <th ></th>
+                  </tr>
+                </thead>
+            
+          <tbody>
+                    <tr>
+                      <td> <input type="text" name="description"placeholder="What do you need to do?" required></input></th>
+                      <td >  <select name="category" required>
+
+                        <option>PERSONAL</option>
+                        <option>WORK</option>
+                        <option>SCHOOL</option>
+                    <option>OTHER</option>
+
+                    </select></th>
+                      <td > <input type="date" name="date" required></th>
+                      <td ><input type="submit"  class="btn btn-success"id="add" value="ADD TASK"></th>
+                    </tr>
+                </tbody>
+            
+            </table>
+                  
+  </form>
+    </section>
+        <div>          
+                <h1 align="center">TASKS LIST</h1>
+
+                <form action="/delete-task" method="GET">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                              <th>Select</th>
+                              <th>Task</th>
+                              <th>Category</th>
+                            <th>due date</th>
+                            </tr>
+                          </thead>
+
+                            
+                
+
+                           
+</table>
+<div  align = "center"><input type="submit" class="btn btn-danger" value="DELETE TASK">
+                </div>></form>
+                      
+                      <!-- include the Glitch button to show what the webpage is about and
+to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
+
+        
+    
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        
+        
+        
+        
+      
+        
+        
+        
+        
+        
